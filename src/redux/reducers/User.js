@@ -1,9 +1,9 @@
-const Appstate = {
+const INITIAL_STATE = {
     message : 'This message is from user reducer',
     isLoggedIn : localStorage.getItem('isAuth') ? true : false,
 }
   
-export default function UserReducer(state = Appstate, action){
+export default function UserReducer(state = INITIAL_STATE, action){
     //console.log(action);
   
     switch(action.type)

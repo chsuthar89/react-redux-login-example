@@ -7,6 +7,7 @@ import Home from '@/home';
 import Users from '@/users';
 import About from '@/about';
 import Login from '@/auth/Login';
+import DatatableDemo from '../datatableexamples/DatatableDemo';
 
 function App() {
     const { pathname } = useLocation(); 
@@ -28,6 +29,7 @@ function App() {
                     <Route path='/about' render={props => (
                         <About {...props} tital={tital} />
                     )} />
+                    <Route exact path="/datatabledemo" component={DatatableDemo} />
                     <Redirect from="*" to="/" />
                 </Switch>
             </div>

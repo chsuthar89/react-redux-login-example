@@ -9,6 +9,7 @@ function Nav({isLogin}) {
                 <NavLink exact to="/" className="nav-item nav-link">Home</NavLink>
                 <NavLink to="/users" className="nav-item nav-link">Users</NavLink>
                 <NavLink to="/about" className="nav-item nav-link">About</NavLink>
+                <NavLink to="/datatabledemo" className="nav-item nav-link">DataTable Demo</NavLink>
                 { !isLogin ?
                     <NavLink to="/login" className="nav-item nav-link">Login</NavLink>
                   : 
